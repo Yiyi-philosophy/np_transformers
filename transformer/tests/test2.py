@@ -1,6 +1,10 @@
 import sys, os
 from pathlib import Path
-sys.path[0] = str(Path(sys.path[0]).parent)
+# sys.path[0] = str(Path(sys.path[0]).parent)
+# import os
+current_path = os.getcwd()
+sys.path.append(current_path)
+print(current_path)
 
 
 import numpy as np
